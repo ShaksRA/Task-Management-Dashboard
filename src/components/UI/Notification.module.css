@@ -1,0 +1,19 @@
+.notif {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--green);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  font-size: 13px;
+  color: var(--green);
+  z-index: 200;
+  animation: slideIn 0.25s ease;
+  pointer-events: none;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
