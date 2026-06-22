@@ -1,0 +1,64 @@
+.form {
+  background: var(--surface2);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 0.8rem;
+  margin: 0.75rem;
+}
+
+.form input,
+.form textarea,
+.form select {
+  width: 100%;
+  background: var(--surface3);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 7px 10px;
+  font-size: 12px;
+  font-family: inherit;
+  color: var(--text);
+  outline: none;
+  margin-bottom: 6px;
+  resize: none;
+}
+
+.form input:focus,
+.form textarea:focus { border-color: var(--accent); }
+
+.row {
+  display: flex;
+  gap: 6px;
+}
+
+.row select { flex: 1; }
+
+.btns {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.btns button {
+  flex: 1;
+  padding: 7px;
+  font-size: 12px;
+  font-family: inherit;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity 0.15s;
+}
+
+.confirm {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+}
+
+.cancel {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text2);
+}
+
+.btns button:hover { opacity: 0.8; }
